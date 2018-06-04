@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row text-center">
+    <div class="col-12 text-center">
+      <br>
+      <br>
+      <h1>Character Details</h1>
+      <br>
+      <br>
+      <br>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-12">
+      <p>Character Name : {{currentCharacter.name ? currentCharacter.name : 'Not Available'}}</p>
+      <hr>
+      <p>Gender : {{currentCharacter.gender ?currentCharacter.gender:'Not Available'}}</p>
+      <hr>
+      <p>Culture : {{currentCharacter.culture ?currentCharacter.culture:'Not Available'}}</p>
+      <hr>
+      <p>Born on : {{currentCharacter.born ?currentCharacter.born:'Not Available'}}</p>
+      <hr>
+      <p>Date of Death : {{currentCharacter.died ?currentCharacter.died:'Not Available'}}</p>
+      <hr>
+      <p>Father's Name : {{currentCharacter.father ?currentCharacter.father:'Not Available'}}</p>
+      <hr>
+      <p>Mother's Name : {{currentCharacter.mother ?currentCharacter.mother:'Not Available'}}</p>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-12 " style="align-items: center">
+      <br>
+      <a class="btn btn-warning" (click)='goBackToPreviousLocation()'>Go Back</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class='container margin'>
+  <div class='row text-center'>
+    <div class='col-12'>
+      <h1>House details </h1>
+      <br>
+      <p class='book'>Name: {{currentHouse.name | uppercase }}</p>
+      <hr>
+      <p class='book'>Region: {{currentHouse.region }}</p>
+      <hr>
+      <p class='book'>CoatOfArms: {{currentHouse.coatOfArms }}</p>
+      <hr>
+      <p class='book'>Words: {{currentHouse.words ?currentHouse.words:'Not Available' }}</p>
+      <hr>
+      <p *ngIf='currentHouse.titles.length>0' class='book'>Titles:
+        <span *ngFor='let title of currentHouse.titles;let first=first;let last=last'>{{title?title:'Not Available'}}{{last ? '' : ', '}}</span>
+      </p>
+      <hr>
+      <p *ngIf='currentHouse.seats.length>0' class='book'>Seats:
+        <span *ngFor='let seat of currentHouse.seats;let first=first;let last=last'>{{seat?seat:'Not Available'}}{{last ? '' : ', '}}</span>
+      </p>
+
+      <a class='btn btn-danger' (click)='goBackToPreviousLocation()'>Go Back</a>
+
+
+    </div>
+  </div>
+</div>
